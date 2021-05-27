@@ -1,0 +1,53 @@
+<!-- Modal for School Activity Detail(on Browse School Activities) -->
+<div class="modal fade modal-primary" id="bogsCategoryItemModal" tabindex="-1" role="dialog"
+    aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="card card-login card-plain">
+                <div class="modal-header justify-content-center">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true" class="modal-close-icon">&times;</span>
+                    </button>
+
+
+                    <div class="header header-primary text-center">
+                        <h4>Add Category Item</h4>
+                        <label class="bogsCategoryItemMdl-term"></label>
+                    </div>
+                </div>
+                <div class="modal-body">
+                    <div class="card-body">
+                        <form id="bogsCategoryItemMdlValidation" action="" method="">
+                            <select id="bogsCategoryItemMdl-category" class="form-control custom-form"
+                                name="categoryCode">
+                            </select>
+                            <input type="number" id="bogsCategoryItemMdl-outof"
+                                class="form-control custom-form 2decimal onlyNum" placeholder="Out Of" name="outOf">
+                            <input type="number" id="bogsCategoryItemMdl-numItem"
+                                class="form-control custom-form onlyNum" placeholder="# of Items" name="numOfItem">
+                            <div class="row">
+                                <div class="col-md-12 text-right bogsCategoryItemMdl-btn-group">
+                                    <button type="button" class="btn btn-fill btn-info btn-sm"
+                                        id="bogsCategoryItemMdl-add-btn">Submit</button>
+                                    <button type="button" class="btn btn-fill btn-danger btn-sm"
+                                        id="bogsCategoryItemMdl-cancel-btn">Cancel</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="modal-footer text-center">
+
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+<script>
+    $(document).ready(function () {
+        generateSelector('#addActMdl-category', activityCategory, activityCategoryVal, 'none', '');
+
+    });
+</script>

@@ -1,0 +1,91 @@
+.bogsSubMenu {
+  padding-left: 20px;
+}
+
+.bogs-content{
+  margin-top: 0px !important;
+}
+
+.calendarEvent{
+  border-radius: 5px;
+  color: #FFFFFF;
+}
+
+[data-notify="progressbar"] {
+	margin-bottom: 0px;
+	position: absolute;
+	bottom: 0px;
+	left: 0px;
+	width: 30% !important;
+	height: 5px;
+}
+
+/* Notification */
+.alert {
+  width: 40%;
+}
+
+.viewGrade-italic-2980b9{
+  font-style: italic !important;
+  font-weight: 400 !important;
+  color: #2980b9 !important;
+}
+
+.viewGrade-italic-f08f00{
+  font-style: italic !important;
+  font-weight: 400 !important;
+  color: #f08f00 !important;
+}
+
+.viewGrade-italic{
+  font-style: italic !important;
+  font-weight: 400 !important;
+  color: #AAAAAA !important;
+}
+
+.fc button, .fc button:hover, .fc button:focus, 
+.fc button:active, .fc button.active, .fc button:active:focus, 
+.fc button:active:hover, .fc button.active:focus, .fc button.active:hover, 
+.open>.fc button.dropdown-toggle, .open>.fc button.dropdown-toggle:focus, 
+.open>.fc button.dropdown-toggle:hover, .fc button.btn-primary, 
+.fc button.btn-primary:hover, .fc button.btn-primary:focus, .fc button.btn-primary:active, 
+.fc button.btn-primary.active, .fc button.btn-primary:active:focus, .fc button.btn-primary:active:hover, 
+.fc button.btn-primary.active:focus, .fc button.btn-primary.active:hover, 
+.open>.fc button.btn-primary.dropdown-toggle, .open>.fc button.btn-primary.dropdown-toggle:focus, 
+.open>.fc button.btn-primary.dropdown-toggle:hover {
+  background-color: #00BCD4;
+  color: #FFFFFF;
+  border-radius: 3px;
+  box-shadow: 0 2px 2px 0 rgba(0, 188, 212, 0.14), 0 3px 1px -2px rgba(0, 188, 212, 0.2), 0 1px 5px 0 rgba(0, 188, 212, 0.12);
+}
+
+.fc-day-grid-event .fc-content {
+  white-space: normal;
+  padding: 1px 2px;
+}
+
+/* @media (max-width: 1280px){
+  .alert {
+    width: 60%;
+    left:100px !important;
+  }
+} */
+
+@media (max-width: 1189px){
+  .bogs-select {
+    width: 100% !important;
+  }
+}
+
+/* @media (max-width: 991px){
+  .alert {
+    width: 80%;
+    left:0px !important;
+  }
+} */
+
+@media (max-width: 649px){
+  .bogs-select-children {
+    flex-wrap: wrap !important;
+  }
+}

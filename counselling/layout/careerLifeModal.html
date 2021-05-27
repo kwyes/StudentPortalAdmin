@@ -1,0 +1,213 @@
+<div class="modal fade modal-primary" id="careerLifeModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog modal-login modal-lg">
+        <div class="modal-content">
+            <div class="card card-login card-plain">
+                <div class="modal-header justify-content-center">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true" class="modal-close-icon">&times;</span>
+                    </button>
+                    <div class="header header-primary text-center">
+                        <h4>Career Life Pathway Self-Submit</h4>
+                        <div class="changeNothing">
+                            <h6 class="color-red">You changed nothing!</h6>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-body">
+                    <div class="card-body">
+                        <div class="text-right font-italic"><label><span class="color-red mg-lr-5">*</span> =
+                                Required</label>
+                        </div>
+                        <form id="form-careerLife" action="" method="">
+                            <input type="hidden" id="hidden-projectId" name="projectId">
+
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label for="career-student-img">Student Picture</label><br />
+                                        <div class="text-center">
+                                            <img src="../img/user.png" alt="student-img" id="career-student-img"
+                                                onerror="this.src='../img/user.png'" class="img-m">
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="career-studentId">Student ID</label>
+                                        <input type="text" class="form-control" id="career-studentId" name="studentId"
+                                            disabled>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="career-student-name">Student</label>
+                                        <input type="text" class="form-control" id="career-student-name" name="student"
+                                            disabled>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label for="career-approverPic">Approver Picture</label><br />
+                                        <div class="text-center">
+                                            <img src="../img/user.png" alt="approverPic" id="career-approverPic"
+                                                onerror="this.src='../img/user.png'" class="img-m">
+                                        </div>
+                                    </div>
+
+                                    <div class="form-group">
+                                        <label for="sSubmitMdl-apprStaff">Approver Staff</label>
+                                        <input type="text" class="form-control" id="career-staff" name="staff" disabled>
+                                    </div>
+
+                                    <div class="form-group">
+                                        <label for="career-guide-status">Approval Status <span
+                                                class="color-red mg-lr-5">*</span></label>
+                                        <input type="hidden" id="career-studentName-hidden" name="studentName" value="">
+                                        <input type="hidden" id="career-staffName-hidden" name="staffName" value="">
+                                        <input type="hidden" id="career-preStatus-hidden" name="preStatus" value="">
+                                        <select id="career-status" class="form-control" name="status">
+                                            <option value="60">Pending Approval</option>
+                                            <option value="70">In Progress</option>
+                                            <option value="80">Approved</option>
+                                            <option value="90">Rejected</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="career-course">Course (Teacher)
+                                    <span class="color-red mg-lr-5">*</span></label>
+                                <select name="course" id="career-course" class="form-control" required>
+                                </select>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="career-topic">Capstone Topic <span
+                                        class="color-red mg-lr-5">*</span></label>
+                                <input type="text" class="form-control" name="topic" id="career-topic" maxlength="120"
+                                    required>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="career-capCategory">Capstone Category
+                                    <span class="color-red mg-lr-5">*</span></label>
+                                <select name="capCategory" id="career-capCategory" class="form-control" required>
+                                </select>
+                            </div>
+
+                            <div class="form-group mg-b-8">
+                                <input type="hidden" class="form-control" name="other" id="career-capCategory-other"
+                                    maxlength="100" required>
+                            </div>
+
+
+                            <label>Capstone Career Guide</label>
+                            <div class="row custom-row">
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label for="career-guide-fName">First Name <span
+                                                class="color-red mg-lr-5">*</span></label>
+                                        <input type="text" class="form-control" name="firstName" id="career-guide-fName"
+                                            required>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label for="career-guide-lName">Last Name <span
+                                                class="color-red mg-lr-5">*</span></label>
+                                        <input type="text" class="form-control" name="lastName" id="career-guide-lName"
+                                            required>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row custom-row">
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label for="career-guide-email">E-mail <span
+                                                class="color-red mg-lr-5">*</span></label>
+                                        <input type="email" class="form-control" name="email" id="career-guide-email"
+                                            required>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label for="career-guide-phone">Phone Number</label>
+                                        <input type="text" class="form-control" name="phone"
+                                            pattern="^\d{3}-\d{3}-\d{4}$" id="career-guide-phone">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row custom-row">
+                                <div class="col-md-12">
+                                    <div class="form-group">
+                                        <label for="career-guide-position">Position Title <span
+                                                class="color-red mg-lr-5">*</span></label>
+                                        <input type="text" class="form-control" name="position"
+                                            id="career-guide-position"
+                                            placeholder="e.g., Bodwell staff, work for City Center, etc." required>
+                                    </div>
+                                </div>
+
+
+
+                            </div>
+                            <div class="form-group">
+                                <label for="career-description">Capstone Brief Description <span
+                                        class="color-red mg-lr-5">*</span></label>
+                                <textarea class="form-control" name="description" id="career-description" rows="10"
+                                    maxlength="1000" required></textarea>
+                            </div>
+                            <div class="form-group">
+                                <label for="career-teachercomment">Teacher Comment<span
+                                        class="color-red mg-lr-5">*</span></label>
+                                <textarea class="form-control" name="tComment" id="career-teachercomment" rows="5"
+                                    maxlength="1000" required></textarea>
+                            </div>
+                    </div>
+                    <div class="modal-footer text-right">
+                        <button type="button" class="btn btn-info custom-btn btn-sm" id="career-save-btn">Save</button>
+                        <!-- <button type="button" class="btn btn-info custom-btn btn-sm"
+                            id="career-submit-btn">Submit</button> -->
+                        <button type="reset" class="btn btn-default custom-btn btn-sm"
+                            id="career-cancel-btn">Cancel</button>
+                    </div>
+                    <div class="col-md-12 text-center" id="createEdit-text">
+                        <div class="text-left" style="display:inline-block;">
+                            <label style="width:120px">Last modified at </label><label
+                                id="career-modifiedBy"></label><br />
+                            <label style="width:120px">Created at </label><label id="career-createdBy"></label>
+                        </div>
+                    </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="mask">
+    <div class="spinnerContainer">
+        <svg class="spinner" width="65px" height="65px" viewBox="0 0 66 66" xmlns="http://www.w3.org/2000/svg">
+            <circle class="path" fill="none" stroke-width="6" stroke-linecap="round" cx="33" cy="33" r="30">
+            </circle>
+        </svg>
+    </div>
+</div>
+<script type="text/javascript">
+    $(document).ready(function () {
+        // ajaxtoApprovalList('.select-self-advisiorList');
+        generateSelector_v2('#career-capCategory', capstoneCategory, '', '')
+
+        $('#career-capCategory').change(function (event) {
+            if ($('#career-capCategory').val() == 'Other (Specify below)') {
+                $('#career-capCategory-other').prop('type', 'text');
+            } else {
+                $('#career-capCategory-other').val('');
+                $('#career-capCategory-other')
+                    .closest(".form-check")
+                    .removeClass("has-danger")
+                    .addClass("has-success");
+                $('#career-capCategory-other').prop('type', 'hidden');
+
+            }
+
+        });
+    });
+</script>

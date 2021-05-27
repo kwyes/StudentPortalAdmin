@@ -1,0 +1,224 @@
+.table>tbody>tr>td, .table>tbody>tr>th, .table>tfoot>tr>td, .table>tfoot>tr>th, .table>thead>tr>td, .table>thead>tr>th {
+    border-top: none !important;
+  }
+  #datatables-enrollment td,
+  #datatables-activities td,
+  #datatables-selfsubmit td,
+  #datatables-vlwe td {
+    padding: 5px 15px !important;
+  }
+  
+  #actMdl-student-table th:nth-child(1) {
+    width: 5%;
+  }
+  
+  #actMdl-student-table th:nth-child(2) {
+    width: 15%;
+  }
+  
+  #actMdl-student-table td:nth-child(3) {
+    width: 42.5%;
+  }
+  
+  #actMdl-student-table td:nth-child(4) {
+    width: 10%;
+    margin: 0 auto;
+  }
+  
+  #actMdl-student-table td:nth-child(4) > i {
+    margin: 0 auto;
+  }
+  
+  #dashboard-courses th:nth-child(1),
+  #dashboard-courses th:nth-child(3){
+    width: 15% !important
+  }
+  
+  #searchStuMdl-table th,
+  #addEnrollMdl-table th,
+  #searchStuMdlReport-table th,
+  #searchStuMdlCareer-table th {
+    font-size: 14px;
+  }
+  
+  #searchStuMdl-table td,
+  #addEnrollMdl-table td,
+  #searchStuMdlReport-table td,
+  #searchStuMdlCareer-table td {
+    font-size: 12px;
+  }
+  
+  #addEnrollMdl-table th:nth-child(2),
+  #addEnrollMdl-table td:nth-child(2) {
+    width: 30%;
+  }
+  
+  #searchStuMdlReport-table th:nth-child(1),
+  #searchStuMdlReport-table td:nth-child(1),
+  #searchStuMdlReport-table th:nth-child(3),
+  #searchStuMdlReport-table td:nth-child(3),
+  #searchStuMdlCareer-table th:nth-child(1),
+  #searchStuMdlCareer-table td:nth-child(1) {
+    width: 20%;
+  }
+  
+  #searchStuMdlCareer-table th:nth-child(3),
+  #searchStuMdlCareer-table td:nth-child(3) {
+    width: 30%;
+  }
+  
+  #searchStuMdl-table tbody,
+  #addEnrollMdl-table tbody,
+  #searchStuMdlReport-table tbody,
+  #searchStuMdlCareer-table tbody {
+    display: block;
+    height: 210px;
+    overflow: auto;
+  }
+  
+  #searchStuMdl-table thead,
+  #searchStuMdl-table tbody tr,
+  #addEnrollMdl-table thead,
+  #addEnrollMdl-table tbody tr,
+  #searchStuMdlReport-table thead,
+  #searchStuMdlReport-table tbody tr,
+  #searchStuMdlCareer-table thead,
+  #searchStuMdlCareer-table tbody tr {
+    display: table;
+    width: 100%;
+    table-layout: fixed;
+  }
+  
+  #searchStuMdlReport-table tbody tr,
+  #searchStuMdlCareer-table tbody tr {
+    cursor: pointer;
+  }
+  
+  #schoolActivityModal table td,
+  #addSelfSubmitModal table td,
+  #selfSubmitModal table td,
+  #addActivityModal table td,
+  #vlweModal table td,
+  #addVlweModal table td,
+  #sStudentModal table td {
+    padding-left: 25px;
+    padding-right: 25px;
+  }
+  
+  #datatables-report td:nth-child(6) {
+    padding-right: 40px !important;
+  }
+  
+  #datatables-selfsubmit_filter {
+    display: inline;
+  }
+  
+  #datatables-selfsubmit_length {
+    display: inline;
+    margin-left: 13px;
+  }
+  
+  .selfsubmit-filter-wrapper {
+    text-align: right;
+  }
+  
+  .dataTables_filter .form-group input {
+    width: 250px !important;
+  }
+  
+  div.dataTables_wrapper div.dataTables_length select {
+    width: 50px !important;
+  }
+  
+  #dashboard-studentlist td:nth-child(n + 2) {
+    text-align: center;
+  }
+  
+  #dashboard-studentlist td:nth-child(n) {
+    padding: 0;
+  }
+  
+  #datatables-myStudentList_filter,
+  #datatables-report_filter,
+  #datatables-vlwe-report_filter,
+  #datatables-student-search_filter,
+  #datatables-careerlife_filter,
+  #datatables-entireStudentList_filter {
+    text-align: left !important;
+  }
+  
+  #datatables-myStudentList_length,
+  #datatables-report_length,
+  #datatables-vlwe-report_length,
+  #datatables-student-search_length,
+  #datatables-entireStudentList_length {
+    text-align: right !important;
+  }
+  
+  #datatables-careerlife_length {
+    text-align: left !important;
+    padding-left: 40px;
+  }
+
+  .nowrap {
+    white-space: nowrap;
+  }
+  
+  .ellipsis-table td {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  
+  .ellipsis-td {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  
+  .tr-selected {
+    background-color: #eafafc !important;
+  }
+  
+  .tr-selected:hover {
+    background-color: #deebed !important;
+  }
+  
+  /* Date Picker */
+  .table-condensed td:first-child {
+    background-color: transparent !important;
+  }
+  
+  .table-condensed td {
+    max-width: 14% !important;
+  }
+  
+  .table-condensed td > button {
+    background-color: #00bcd4 !important;
+  }
+  
+  @media (max-width: 1369px) {
+    #datatables-enrollment td,
+    #datatables-activities td,
+    #datatables-selfsubmit td,
+    #datatables-vlwe td {
+      max-width: 90px !important;
+      padding: 5px 8px !important;
+    }
+  
+    #datatables-selfsubmit td:nth-child(6) {
+      min-width: 50px !important;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    #schoolActivityModal table td,
+    #addSelfSubmitModal table td,
+    #selfSubmitModal table td,
+    #addActivityModal table td,
+    #vlweModal table td,
+    #addVlweModal table td {
+      padding-left: 8px;
+      padding-right: 8px;
+    }
+  }

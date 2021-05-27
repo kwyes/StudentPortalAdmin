@@ -1,0 +1,165 @@
+<!-- Modal for School Activity Detail(on Browse School Activities) -->
+<div class="modal fade modal-primary" id="addActivityModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="card card-login card-plain">
+                <div class="modal-header justify-content-center">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true" class="modal-close-icon">&times;</span>
+                    </button>
+
+
+                    <div class="header header-primary text-center">
+                        <h4>Add School Activity</h4>
+                        <label class="actMdl-term"></label>
+                    </div>
+                </div>
+                <div class="modal-body">
+                    <div class="card-body">
+                        <form id="addActMdlValidation" action="" method="">
+                            <table id="addActMdl-table" class="table modal-table" cellspacing="0" width="100%">
+
+                                <tbody>
+                                    <tr>
+                                        <td><span class="test"> Activity Name</span><span class="color-red">*</span>
+                                        </td>
+                                        <td>
+                                            <input type="text" class="form-control" id="addActMdl-title" name="title">
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>Staff Leader<span class="color-red">*</span></td>
+                                        <td class="addActMdl-StfLeader row">
+                                            <div class="stf1 col-md-12 text-center" style="padding:0;">
+                                                <select id="addActMdl-stf1" class="form-control select-advisiorList"
+                                                    name="staff1">
+                                                    <option value="">Choose the staff leader 1</option>
+                                                </select>
+                                            </div>
+                                            <div class="stf2 col-md-12 text-center" style="padding:0;">
+                                                <select id="addActMdl-stf2" class="form-control select-advisiorList"
+                                                    name="staff2">
+                                                    <option value="">Choose the staff leader 2</option>
+                                                </select>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>Description</td>
+                                        <td>
+                                            <textarea id="addActMdl-description" rows="5"
+                                                class="md-textarea form-control" name="description"></textarea>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>Category<span class="color-red">*</span></td>
+                                        <td>
+                                            <select id="addActMdl-category" class="form-control" name="category">
+
+                                            </select>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>Enrollment Type<span class="color-red">*</span></td>
+                                        <td>
+                                            <select id="addActMdl-enrType" class="form-control" name="enrollType">
+                                                <option value="Boarding">Boarding</option>
+                                            </select>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>Eligible for CREX?<span class="color-red">*</span></td>
+                                        <td>
+                                            <div class="form-group">
+                                                <div class="row custom-row">
+                                                    <div class="form-check-radio col-md-2">
+                                                        <label class="form-check-label">
+                                                            <input class="form-check-input addActMdl-vlwe" type="radio"
+                                                                name="Actvlwe" id="" value="1" autocomplete="off">
+                                                            <div class="radio-label">Yes</div>
+                                                            <span class="form-check-sign"></span>
+                                                        </label>
+                                                    </div>
+                                                    <div class="form-check-radio col-md-2">
+                                                        <label class="form-check-label">
+                                                            <input class="form-check-input addActMdl-vlwe" type="radio"
+                                                                name="Actvlwe" id="" value="0" autocomplete="off">
+                                                            <div class="radio-label">No</div>
+                                                            <span class="form-check-sign"></span>
+                                                        </label>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>Location<span class="color-red">*</span></td>
+                                        <td>
+                                            <input type="text" class="form-control" id="addActMdl-location"
+                                                name="location">
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>Meeting Place</td>
+                                        <td>
+                                            <input type="text" class="form-control" id="addActMdl-meetPlace"
+                                                name="place">
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>Start time<span class="color-red">*</span></td>
+                                        <td class="addActMdl-start">
+                                            <input type="text" class="form-control datetimepicker"
+                                                data-date-format="YYYY-MM-DD hh:mm A" name="start" id="addActMdl-start">
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>End time<span class="color-red">*</span></td>
+                                        <td class="addActMdl-end">
+                                            <input type="text" class="form-control datetimepicker"
+                                                data-date-format="YYYY-MM-DD hh:mm A" name="end" id="addActMdl-end">
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>Base Hours<span class="color-red">*</span></td>
+                                        <td>
+                                            <input type="number" class="form-control" id="addActMdl-hours" name="hours"
+                                                step=".1" min="0">
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>MAX Enrollment<span class="color-red">*</span></td>
+                                        <td>
+                                            <input type="number" class="form-control" id="addActMdl-maxEnroll"
+                                                name="maxEnroll" step="1" min="0">
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <div class="row">
+                                <div class="col-md-12 text-right addActMdl-btn-group">
+                                    <button type="button" class="btn btn-fill btn-info btn-sm"
+                                        id="addActMdl-add-btn">Submit</button>
+                                    <button type="button" class="btn btn-fill btn-danger btn-sm"
+                                        id="addActMdl-back-btn">Cancel</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="modal-footer text-center">
+
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+<script>
+    $(document).ready(function () {
+        generateSelector('#addActMdl-category', activityCategory, activityCategoryVal, 'none', '');
+
+    });
+</script>

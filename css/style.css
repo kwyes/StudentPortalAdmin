@@ -1,0 +1,179 @@
+.manage-schAct li,
+.manage-stuAct li {
+  margin: 15px 0;
+}
+
+.activities-btn-group,
+.selfsubmit-btn-group,
+.vlwe-btn-group {
+  text-align: right;
+}
+
+#searchStudentModal .modal-dialog {
+  position: relative;
+  top: 220px;
+  margin: 0 auto !important;
+}
+
+.modal-status-icon {
+  display: inline-flex;
+  font-weight: 400;
+}
+
+.modal-status-icon i {
+  position: relative;
+  top: 1px;
+}
+
+.error {
+  color: #f44336 !important;
+}
+
+.sSubmit-stfLeader-select {
+  max-width: 370px;
+}
+
+.report-num {
+  font-weight: 500;
+  margin: 0 2px 0 5px;
+}
+
+#report-stuName,
+#searchStu-stuName {
+  margin-left: 5px;
+  font-size: 2.2rem;
+}
+
+.report-redirect-a:hover,
+.report-redirect-a:focus {
+  color: #202020 !important;
+  font-weight: bold;
+}
+
+.report-redirect-a,
+.report-redirect-a:visited {
+  color: #202020 !important;
+  font-weight: bold;
+}
+
+.mailLink,
+.mailLink:hover,
+.mailLink:visited,
+.mailLink:focus,
+.waLink,
+.waLink:hover,
+.waLink:visited,
+.waLink:focus,
+.waDetailLink,
+.waDetailLink:hover,
+.waDetailLink:visited,
+.waDetailLink:focus {
+  color: #202020;
+}
+
+
+.redirect-admin-studentid {
+  cursor: pointer;
+  color: #22a6b3;
+  text-decoration: none;
+}
+
+.report-termid {
+  display: none;
+}
+
+.naText {
+  color: #9a9a9a;
+  font-style: italic;
+}
+
+/* Scroll Bar */
+/* width */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  display: block;
+  background-color: transparent;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background-color: #b2bec3;
+  opacity: 0.9;
+  border-radius: 6px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background-color: #636e72;
+}
+
+@media (max-width: 480px) {
+  #searchStudentModal .modal-content {
+    padding: 0 !important;
+  }
+
+  #searchStudentModal .modal-body {
+    padding: 8px !important;
+  }
+
+  #searchStudentModal .modal-dialog {
+    top: 0;
+    margin: 0 auto !important;
+  }
+
+  .modal .card img {
+    width: 180px !important;
+    height: 270px !important;
+  }
+
+  .custom-form-label {
+    margin-left: 50;
+  }
+
+  .bootstrap-datetimepicker-widget {
+    width: 225px !important;
+    height: 300px !important;
+
+    top: 0 !important;
+    right: 0px !important;
+  }
+
+  .bootstrap-datetimepicker-widget table tr,
+  .bootstrap-datetimepicker-widget table td {
+    width: 25px !important;
+    font-size: 11px;
+  }
+}
+
+.material-icons.highlight_off:before,
+.mi.highlight_off:before {
+  content: "\e888";
+  color: red;
+}
+
+.filter-select {
+  font-size: 12px;
+  margin-right: 20px;
+  padding: 5px;
+  color: #9a9a9a;
+  border-radius: .2rem;
+  border: 1px solid #dddddd;
+}
+
+.notes{
+  background-attachment: local;
+  background-image:
+      linear-gradient(to right, white 10px, transparent 10px),
+      linear-gradient(to left, white 10px, transparent 10px),
+      repeating-linear-gradient(white, white 30px, #000 30px, #000 31px, white 31px);
+  line-height: 31px;
+  padding: 8px;
+  width:100%;
+  border: none;
+  resize: none;
+}
